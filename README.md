@@ -1,83 +1,54 @@
-# EX NO 1: Cloud-account-set-up-and-services
+# CLOUD-STORAGE-CREATION-S3-AND-LAUNCHING-AN-EC2-INSTANCE-IN-AWS-
 
-### Name : HARSHINI R
-### Reg no: 212223220033
+## Name: HARSHINI R
+## Register Number:212223220033
+ 
+# AIM :
+To create an AWS account, set up a root user, and create an IAM user with specified permissions.
 
-## Aim:
-To create an cloud account in AWS and to explore all of its services.
+# PROBLEM STATEMENT :
+This experiment involves creating an AWS account, configuring security settings for the root user, and setting up an IAM user. IAM users allow for secure, managed access to AWS resources without exposing the main account's root credentials.
 
-## Procedure
-Step 1: Go to the AWS Website
-• Visit https://aws.amazon.com
+# Procedure:
+-> Sign in to the AWS Management Console: 
+    • Go to the AWS Management Console and log in with your AWS credentials. 
+-> Navigate to the EC2 Dashboard: 
+    • Once logged in, locate and click on the "EC2" service in the AWS Management Console. 
+->Launch an Instance: 
+    • On the EC2 dashboard, click the "Launch Instance" button. ->Choose an AMI (Amazon Machine Image): 
+    • Select the operating system and software you want to use for your instance (e.g., Amazon Linux, Ubuntu, Windows). 
+    • Click "Select" to choose the AMI. 
+->Choose an Instance Type: 
+    • Select the type of instance you need (e.g., t2.micro, m5.large) based on your workload requirements. 
+    • Click "Next: Configure Instance Details". 
+->Configure Instance Details: 
+    • Set the number of instances to launch, the availability zone, and other optional settings like networking and security. 
+    • Click "Next: Add Storage". 
+->Configure Storage: 
+    • Specify the size and type of storage for your instance. 
+    • Click "Next: Add Tags". 
+->Add Tags (Optional): 
+    • Add tags to your instance for easier identification and management. 
+    • Click "Next: Configure Security Group". 
+->Configure Security Group: 
+    • Choose or create a security group to control inbound and outbound traffic to your instance. 
+    • Click "Review and Launch". Review and Launch: 
+    • Review all the configurations and click "Launch". Create a Key Pair (if you haven't already):
+    • You'll be prompted to create a new key pair or choose an existing one. 
+    • Download the key pair (.pem file) and store it securely. Launch the Instance: 
+    • Click "Launch Instance" to start the instance creation process. Connect to your Instance: 
+    • Once the instance is running, you can connect to it using SSH (for Linux) or RDP (for Windows). 
+    • Use the key pair you downloaded earlier to connect.
 
-• Click “Create an AWS Account” in the top right corner.
+# Output
 
-Step 2: Enter Account Information
-• Email address – Use a valid email you have access to.
+<img width="1018" height="473" alt="image" src="https://github.com/user-attachments/assets/632c5422-2d7a-4f56-9a02-89d89eb0a6ed" />
 
-• Password – Create a strong password.
 
-• AWS account name – This is the name you want to associate with your AWS account (e.g., your name or company name).
+<img width="1002" height="476" alt="image" src="https://github.com/user-attachments/assets/0b64c8a8-43f3-4931-904b-a484424bc70a" />
 
-Step 3: Choose Account Type
-• Personal or Professional – Select based on how you plan to use AWS.
 
-• Fill in your contact information (name, address, phone number).
+<img width="1919" height="858" alt="Screenshot 2025-11-01 114447" src="https://github.com/user-attachments/assets/c22cf567-5d14-4e32-9c8e-ae360ed683d5" />
 
-Step 4: Enter Payment Information
-• Provide credit/debit card details.
-
-Note: You won’t be charged immediately. AWS offers a Free Tier, but entering card details is mandatory.
-
-Step 5: Verify Your Identity
-• Enter your phone number.
-
-• AWS will send a verification code via call or text.
-
-• Enter the code to confirm your identity.
-
-Step 6: Choose a Support Plan
-Choose one of the following: • Basic Support (Free)
-
-• Developer Support
-
-• Business Support
-
-• Enterprise Support
-
-For most beginners, select Basic Support.
-
-Step 7: Complete the Sign-Up
-• After reviewing all the details, click "Sign Up".
-
-• You’ll receive a confirmation email once your account is activated (usually within a few minutes).
-
-Step 8: Sign In to AWS Console
-• Go to https://console.aws.amazon.com
-
-• Log in using your email and password to start using AWS services.
-
-Create a user with administrative access
-After you sign up for an AWS account, secure your AWS account root user, enable AWS IAM Identity Center, and create an administrative user so that you don't use the root user for everyday tasks.
-
-Secure your AWS account root user
-Sign in to the AWS Management Console (https://console.aws.amazon.com) as the account owner by choosing Root user and entering your AWS account email address. On the next page, enter your password. Turn on multi-factor authentication (MFA) for your root user.
-
-Create user with administrative access
-Enable IAM Identity Center. In IAM Identity Center, grant administrative access to a user.
-
-Sign in as the user with administrative access
-To sign in with your IAM Identity Center user, use the sign-in URL that was sent to your email address when you created the IAM Identity Center user.
-
-Services Overview:
-• Explore all the available services in AWS platform.
-
-## Output:
-
-<img width="1898" height="908" alt="Screenshot 2025-11-14 135514" src="https://github.com/user-attachments/assets/5e5d714f-d0ad-49c6-b4b4-223d9340e545" />
-
-<img width="1919" height="908" alt="Screenshot 2025-11-14 135547" src="https://github.com/user-attachments/assets/2ea203e3-7675-4c51-8a84-30a6bdedfd06" />
-
-## Result:
-Thus an account was created in AWS platform and all the services were explored.
-
+# Result
+The AWS account was successfully created, with set up for the root user . Additionally, an IAM user was created with specified permissions, allowing for secure, controlled access to AWS resources without the use of the root account.
